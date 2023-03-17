@@ -8,17 +8,19 @@
 <% end %>
 
 <%= form_with(model: @article, local: true) do |f| %>
-  <p>
-    <%= f.label :title %></br>
-    <%= f.text_field :title %>
-  </p>
-
-  <p>
-    <%= f.label :description %></br>
-    <%= f.text_area :description %>
-  </p>
-
-  <p>
-    <%= f.submit %>
-  </p>
+  <div class="container" style="width: 45em;">
+    <div class="mb-3">
+      <%= f.label :title, class:"form-label" %></br>
+      <%= f.text_field :title, class:"form-control" %>
+    </div>
+    <div class="mb-3">
+      <%= f.label :description, class:"form-label" %></br>
+      <%= f.text_area :description, class:"form-control" %>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <%= f.submit class:"btn btn-primary" %>
+  </div>
 <% end %>
