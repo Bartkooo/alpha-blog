@@ -15,6 +15,8 @@ gem 'rouge'
 gem 'sassc-rails'
 gem 'bootstrap', '~> 5.2.0'
 
+gem 'bcrypt', '~> 3.1', '>= 3.1.18'
+
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
