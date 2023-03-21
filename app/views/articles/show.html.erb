@@ -3,7 +3,7 @@
 <div class="container d-flex align-items-center flex-column">
     <div class="card text-center shadow mb-5 bg-body rounded" style="width: 45em;">
       <div class="card-header fst-italic">
-        by Bartkooo
+        by <%= @article.user.username %>
       </div>
       <div class="card-body">
         <h5 class="card-title"><%= @article.title %></h5>
