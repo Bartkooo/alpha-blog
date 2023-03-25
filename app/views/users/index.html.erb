@@ -1,0 +1,8 @@
+<h1 class="text-center mt-4 mb-4">Alpha Blog users</h1>
+
+<div class="container d-flex align-items-center flex-column">
+  <% @users.each do |u| %>
+    <%= u.username %>
+    <%= u.email %>
+  <% end %>
+</div>
