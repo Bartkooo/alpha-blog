@@ -17,6 +17,7 @@ gem 'bootstrap', '~> 5.2.0'
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.18'
 gem 'will_paginate', '~> 3.3', '>= 3.3.1'
+gem 'byebug', '~> 11.1', '>= 11.1.3'
 
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
