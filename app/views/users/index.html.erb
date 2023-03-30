@@ -15,7 +15,9 @@
         <%= gravatar_for u, size: 200 %>
         <div class="mt-2 mb-2"><%= pluralize(u.articles.count, "article") %></div>
         <%= link_to "View profile", user_path(u), class:"btn btn-outline-primary" %>
-        <%= link_to "Edit profile", edit_user_path(u), class:"btn btn-outline-success" %>
+        <% if logged_in? && u == current_user %>
+          <%= link_to "Edit profile", edit_user_path(u), class:"btn btn-outline-success" %>
+        <% end %>
       </div>
       <div class="card-footer text-muted">
         <small>
