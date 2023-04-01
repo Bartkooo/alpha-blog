@@ -30,7 +30,7 @@
               <li><%= link_to "View profile", user_path(current_user), class:"dropdown-item" %></li>
               <li><%= link_to "Edit profile", edit_user_path(current_user), class:"dropdown-item" %></li>
               <li><%= link_to "Log out", logout_path, class:"dropdown-item text-danger", data: { turbo_method: :delete } %></li>
-              <li><%= link_to "Delete account", user_path(current_user), class:"dropdown-item text-danger", data: { turbo_method: :delete, confirm: "Are you sure?" } %></li>
+              <li><%= button_to "Delete account", user_path(current_user), class:"dropdown-item text-danger", method: :delete, data: { turbo_confirm: "Are you sure?" } %></li>
             </ul>
           </li>
         <% else %>
