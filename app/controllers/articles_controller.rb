@@ -53,7 +53,7 @@ class ArticlesController < ApplicationController
   end
 
   def require_appropriate_user
-    if current_user != @article.user
+    if current_user != @article.user && !current_user.admin?
       flash[:alert] = "You must be creator of that article to handle that operation"
       redirect_to @article
     end
