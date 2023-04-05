@@ -56,7 +56,7 @@ class UsersController < ApplicationController
   end
 
   def require_appropriate_user
-    if current_user != @user
+    if current_user != @user && !current_user.admin?
       flash[:alert] = "It must be your profile to handle that operation"
       redirect_to @user
     end

@@ -15,9 +15,14 @@
         <%= gravatar_for u, size: 200 %>
         <div class="mt-2 mb-2"><%= pluralize(u.articles.count, "article") %></div>
         <%= link_to "View profile", user_path(u), class:"btn btn-outline-primary" %>
-        <% if logged_in? && u == current_user %>
-          <%= link_to "Edit profile", edit_user_path(u), class:"btn btn-outline-success" %>
-        <% end %>
+        <% if logged_in? %>
+          <% if u == current_user %>
+            <%= link_to "Edit profile", edit_user_path(u), class:"btn btn-outline-success" %>
+          <% end %>
+          <% if current_user.admin? %>
+            <%= link_to "Delete user", user_path(u), class:"btn btn-outline-danger", method: :delete, form: { data: { confirm: "Are you sure?" } } %>
+          <% end %>
+        <%end %>
       </div>
       <div class="card-footer text-muted">
         <small>
