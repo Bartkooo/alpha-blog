@@ -1,6 +1,6 @@
 <% flash.each do |name, msg| %>
   <div class="d-flex justify-content-center mt-4">
-    <div class="alert alert-success alert-dismissible fade show" role="alert" style="width: 45em;">
+    <div class="alert alert-<%= name == "notice" ? "success" : "danger" %> alert-dismissible fade show" role="alert" style="width: 45em;">
       <%= msg %>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
