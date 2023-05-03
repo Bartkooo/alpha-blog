@@ -23,6 +23,15 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Articles", categories_path, class:"dropdown-item" %></li>
+              <li><%= link_to "New article", new_category_path, class:"dropdown-item" %></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <%= "(Admin)" if current_user.admin? %> Profile
             </a>
@@ -36,6 +45,9 @@
         <% else %>
           <li class="nav-item">
             <%= link_to "Articles", articles_path, class:"nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Categories", categories_path, class:"nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "Log in", login_path, class:"nav-link" %>
