@@ -1,0 +1,19 @@
+0000000000000000000000000000000000000000 50a1ceb2bd8ee050ae2bff38adbb09c4fe71f7da bartek <bartek@PCB> 1680725112 +0200	clone: from github.com:Bartkooo/alpha-blog.git
+50a1ceb2bd8ee050ae2bff38adbb09c4fe71f7da a7ee397e1aba0f47b20916e8d0f15ab0778ac294 Bartkooo <bartosz.plochocki@gmail.com> 1680786123 +0200	commit: init on ubuntu
+a7ee397e1aba0f47b20916e8d0f15ab0778ac294 038e32e9d674b8c9a2d54795645fe051ea0dbfef Bartkooo <bartosz.plochocki@gmail.com> 1680786951 +0200	commit: fix logging out
+038e32e9d674b8c9a2d54795645fe051ea0dbfef e24d8bc9a3243101da1dbf97b16f9e91993bcf87 Bartkooo <bartosz.plochocki@gmail.com> 1680787789 +0200	commit: delete user
+e24d8bc9a3243101da1dbf97b16f9e91993bcf87 8bf7c646b22d5f46d63348b3ce9ce3f8378b9beb Bartkooo <bartosz.plochocki@gmail.com> 1680788018 +0200	commit: logout statement
+8bf7c646b22d5f46d63348b3ce9ce3f8378b9beb f3505a66328446c8fb42114723f3ed2e018f0088 Bartkooo <bartosz.plochocki@gmail.com> 1680788454 +0200	commit: messages color
+f3505a66328446c8fb42114723f3ed2e018f0088 083ab2dad1a59bb8ef7034aa5b863087f8943df7 Bartkooo <bartosz.plochocki@gmail.com> 1680857602 +0200	commit: create category model
+083ab2dad1a59bb8ef7034aa5b863087f8943df7 ff8ef55014a7e7956e2ce65ff4909e45c74da92d Bartkooo <bartosz.plochocki@gmail.com> 1680857678 +0200	commit: categories migration
+ff8ef55014a7e7956e2ce65ff4909e45c74da92d 22e6eb2d76c026a2fdfbfd1d736ec3fd0574e649 Bartkooo <bartosz.plochocki@gmail.com> 1680858759 +0200	commit: category name validations
+22e6eb2d76c026a2fdfbfd1d736ec3fd0574e649 ff0e6ada240085fc4ba6b5dabcde9943a8d821a4 Bartkooo <bartosz.plochocki@gmail.com> 1680860951 +0200	commit: categories controller test
+ff0e6ada240085fc4ba6b5dabcde9943a8d821a4 c008ecbc7355c9a9f4695a6d0a56b1b3fb81ee57 Bartkooo <bartosz.plochocki@gmail.com> 1680940270 +0200	commit: create category
+c008ecbc7355c9a9f4695a6d0a56b1b3fb81ee57 e6af7ab6493cb3d3b1fa5ed794cfc1803c8d92c4 Bartkooo <bartosz.plochocki@gmail.com> 1681126547 +0200	commit: integration test - create category
+e6af7ab6493cb3d3b1fa5ed794cfc1803c8d92c4 146642b93631f5fc988754904f52feb0763d2806 Bartkooo <bartosz.plochocki@gmail.com> 1681226656 +0200	commit: validation category integration test
+146642b93631f5fc988754904f52feb0763d2806 5b45f17cd410f0435fe247ba84110be914338ead Bartkooo <bartosz.plochocki@gmail.com> 1681226725 +0200	commit: match body response
+5b45f17cd410f0435fe247ba84110be914338ead 3d80a04f4f980964d9f82c4707497977d0044b78 Bartkooo <bartosz.plochocki@gmail.com> 1682940135 +0200	commit: list categories
+3d80a04f4f980964d9f82c4707497977d0044b78 5945633b54b11bf440564abc535861760ed8a34c Bartkooo <bartosz.plochocki@gmail.com> 1682940425 +0200	commit: categories pagination
+5945633b54b11bf440564abc535861760ed8a34c 5befe0875ae85afb10129017fcadb1807253534d Bartkooo <bartosz.plochocki@gmail.com> 1683129266 +0200	commit: categories testing
+5befe0875ae85afb10129017fcadb1807253534d 790f20863d5540f427738a558e7c24a74efd39af Bartkooo <bartosz.plochocki@gmail.com> 1683129567 +0200	commit: navbar links to categories
+790f20863d5540f427738a558e7c24a74efd39af 55cf36126e38a10f6b6ca7619a174c82713a2847 Bartkooo <bartosz.plochocki@gmail.com> 1683129841 +0200	commit: if admin
