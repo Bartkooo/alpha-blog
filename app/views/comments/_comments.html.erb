@@ -1,5 +1,6 @@
 <% @article.comments.each do |c| %>
   <li class="list-group-item">
-    <%= c.text %>
+    <div><%= c.text %></div>
+    <div><%= time_ago_in_words(c.created_at) %> ago</div>
   </li>
 <% end %>
