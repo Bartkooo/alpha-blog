@@ -23,8 +23,11 @@
         comments: <%= @article.comments.count %>
       </small>
     </div>
-    <div>
+  </div>
+  <div class="card shadow" style="width: 45em;">
+    <h5 class="card-header">Comments</h5>
+    <ul class="list-group text-start">
       <%= render 'comments/comments' %>
-    </div>
+    </ul>
   </div>
 </div>
