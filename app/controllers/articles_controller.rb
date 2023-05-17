@@ -8,7 +8,8 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @comment = @article.comments
+    @comment = Comment.new
+    @comment.article_id = @article.id
   end
 
   def new

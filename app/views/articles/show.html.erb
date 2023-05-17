@@ -23,4 +23,13 @@
       </small>
     </div>
   </div>
+  <div class="card shadow" style="width: 45em;">
+    <h5 class="card-header text-center">Comments
+    <span class="fw-light"><%= @article.comments.count %></span>
+    </h5>
+    <%= render 'comments/form' %>
+    <ul class="list-group text-start">
+      <%= render 'comments/comments' %>
+    </ul>
+  </div>
 </div>

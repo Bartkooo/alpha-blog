@@ -1,0 +1,6 @@
+<%= form_for [ @article, @comment ] do |f| %>
+  <div class="input-group">
+    <%= f.text_field :text, class:"form-control" %>
+    <%= f.submit class:"btn btn-primary input-group-text" %>
+  </div>
+<% end %>
