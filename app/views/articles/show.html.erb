@@ -19,13 +19,14 @@
     <div class="card-footer text-muted">
       <small>
         Created <%= time_ago_in_words(@article.created_at) %> ago,
-        edited <%= time_ago_in_words(@article.updated_at) %> ago,
-        comments: <%= @article.comments.count %>
+        edited <%= time_ago_in_words(@article.updated_at) %> ago
       </small>
     </div>
   </div>
   <div class="card shadow" style="width: 45em;">
-    <h5 class="card-header text-center">Comments</h5>
+    <h5 class="card-header text-center">Comments
+    <span class="fw-light"><%= @article.comments.count %></span>
+    </h5>
     <%= render 'comments/form' %>
     <ul class="list-group text-start">
       <%= render 'comments/comments' %>

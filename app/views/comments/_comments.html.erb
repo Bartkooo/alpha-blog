@@ -1,9 +1,9 @@
 <% @article.comments.each do |c| %>
   <li class="list-group-item">
+    <div>
+      <strong><%= link_to c.user.username, user_path(c.user) %></strong> 
+      <span class="fw-light"><%= time_ago_in_words(c.created_at) %> ago</span>
+    </div>
     <div><%= c.text %></div>
-    <div><%= time_ago_in_words(c.created_at) %> ago</div>
-    <% if c.user %>
-     <%= c.user.username %>
-    <% end %>
   </li>
 <% end %>
