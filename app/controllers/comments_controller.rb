@@ -1,8 +1,10 @@
 class CommentsController < ApplicationController
+  before_action :require_user
 
   def create
     @comment = Comment.new(comment_params)
     @comment.article_id = params[:article_id]
+    @comment.user = current_user
 
     @comment.save
 

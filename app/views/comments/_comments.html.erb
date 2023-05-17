@@ -2,5 +2,8 @@
   <li class="list-group-item">
     <div><%= c.text %></div>
     <div><%= time_ago_in_words(c.created_at) %> ago</div>
+    <% if c.user %>
+     <%= c.user.username %>
+    <% end %>
   </li>
 <% end %>
