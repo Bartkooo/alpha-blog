@@ -14,6 +14,8 @@ gem "jbuilder"
 gem 'rouge'
 gem 'sassc-rails'
 gem 'bootstrap', '~> 5.2.0'
+gem 'jquery-rails'
+gem 'sassc-rails'
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.18'
 gem 'will_paginate', '~> 3.3', '>= 3.3.1'
