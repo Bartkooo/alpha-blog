@@ -7,7 +7,7 @@ gem "rails", "~> 7.0.4"
 gem "sprockets-rails"
 gem "puma", "~> 5.0"
 gem "importmap-rails"
-gem "turbo-rails"
+gem 'turbo-rails', '~> 1.4'
 gem "stimulus-rails"
 gem "jbuilder"
 gem 'rouge'
