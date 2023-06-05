@@ -3,7 +3,7 @@ import "@hotwired/turbo-rails"
 
 import "jquery"
 import "popper"
-import "./controllers"
+import "controllers"
 import * as bootstrap from "bootstrap"
 
 let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
