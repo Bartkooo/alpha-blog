@@ -1,7 +1,5 @@
 # README
 
-check it(not working properly): https://alpha-blogg.herokuapp.com/
-
 Things you may want to cover:
 
 * Ruby version
